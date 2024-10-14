@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="pointer-events: none;">
+    <nav>
+        <a href=""><img src="Cube.svg" alt="Cube" width="100%"></a>
+        <div id="nav-div">
+            <div>Download</div>
+            <div onmouseover="DropDownStart('documentation-dropdown')" onmouseleave="DropDownClose('documentation-dropdown')">
+                Documentation
+                <div class="dropdown" id="documentation-dropdown">
+                    <div>Installation</div>
+                    <div>Get Started</div>
+                </div>
+            </div>
+            <div onmouseover="DropDownStart('about-dropdown')" onmouseleave="DropDownClose('about-dropdown')">
+                About
+                <div class="dropdown" id="about-dropdown">
+                    <div>Us</div>
+                    <div>Github</div>
+                    <div>License</div>
+                </div>
+            </div>
+        </div>
+        <input type="search" placeholder="Search...">
+    </nav>
+
+    <hero>
+        <img src="RED Sphere.svg" alt="RED Sphere" width="25%">
+        <div style="text-align: center; width: 80%">
+            <h1>R3D</h1>
+            <div style="width: 90%; margin: 0 5% 5% 5%; word-wrap: break-word; text-align: left;">  
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis fringilla efficitur. Aliquam porta, mauris vitae vehicula imperdiet, ipsum enim vehicula dolor, ut interdum diam justo sit amet mi. Etiam placerat congue commodo. Integer nulla sem, pharetra id libero molestie, sagittis ultricies ante. Phasellus sed commodo justo, congue suscipit eros. Vestibulum pulvinar orci mauris, a sagittis odio consectetur et. Donec nibh turpis, mattis et ante vitae, consequat malesuada enim. Quisque a tincidunt est, scelerisque ornare sapien.
+                Morbi tortor nunc, tristique a ipsum nec, consequat bibendum massa. Duis vitae mauris elit. Vestibulum elit nisi, aliquet et diam ut, consectetur imperdiet massa. Suspendisse pharetra, leo sit amet auctor blandit, risus tortor dictum tortor, a congue leo augue id magna. Curabitur mollis ipsum a lectus vulputate, a vestibulum velit tristique. Curabitur venenatis nisl risus, ut vestibulum nunc gravida eu. Nullam nec tempus erat. Nam feugiat nibh sem, in tristique risus pharetra id. Ut ut ligula vel felis volutpat sagittis. Suspendisse sem massa, aliquet in consectetur ac, lobortis eu libero. Phasellus imperdiet quam sapien, at viverra sem blandit ac.
+            </div>
+        </div>
+    </hero>
+    <script src="script.js"></script>
+</body>
+</html>
